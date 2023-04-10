@@ -25,10 +25,17 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import lds from "./company/lds.png";
+import everise from "./company/everise.png";
+import uscis from "./company/uscis.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import arcane from "./arcanevalley.png"
+import xara from "./xara.png";
+import doggos from "./doggos.png"
+import jikan from "./jikan.png"
 
 export {
   logo,
@@ -59,4 +66,11 @@ export {
   carrent,
   jobit,
   tripguide,
+  lds,
+  everise,
+  uscis,
+  xara,
+  arcane,
+  doggos,
+  jikan,
 };
