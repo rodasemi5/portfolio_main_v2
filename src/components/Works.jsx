@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { projects, myGithub } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -90,6 +90,25 @@ const Works = () => {
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
+      </div>
+
+      <div className="w-full flex flex-col items-center justify-center">
+      <p className="mt-24 text-secondary text-[21px] max-w-3xl leading-[30px] text-center">
+            Check out my Github!
+          </p>
+        <div
+          className="green-pink-gradient p-[10px] rounded-full flex justify-center items-center cursor-pointer mt-4"
+          onClick={() => window.open(myGithub, "_blank")}
+        >
+          <div class="bg-tertiary rounded-full px-3 py-2 flex justify-evenly items-center">
+          <img
+                src={github}
+                alt="source code"
+                className="w-[40px] h-[40px] object-contain"
+              />
+          </div>
+          <p className="text-[21px] ml-2">GitHub</p>
+        </div>
       </div>
     </>
   );

@@ -36,6 +36,7 @@ import arcane from "./arcanevalley.png"
 import xara from "./xara.png";
 import doggos from "./doggos.png"
 import jikan from "./jikan.png"
+import jobsearch from './jobsearch.png'
 
 export {
   logo,
@@ -73,4 +74,5 @@ export {
   arcane,
   doggos,
   jikan,
+  jobsearch,
 };

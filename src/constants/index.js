@@ -30,7 +30,11 @@ import {
     arcane,
     doggos,
     jikan,
+    jobsearch,
+    github,
   } from "../assets";
+
+  export const myGithub = 'https://github.com/rodasemi5'
   
   export const navLinks = [
     {
@@ -259,6 +263,50 @@ import {
       ],
       image: jikan,
       source_code_link: "https://github.com/Lucky-Dog-Studios/jikan-dashboard",
+    },
+
+    {
+      name: "Job Search",
+      description:
+        "A react native app that lets you search software developer apps using REST API.",
+      tags: [
+        {
+          name: "react native",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "rest api",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: jobsearch,
+      source_code_link: "https://github.com/rodasemi5/job_search_app",
+    },
+
+    {
+      name: "Doggos Site",
+      description:
+        "Helped create a functional and responsive site.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "typescript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: doggos,
+      source_code_link: "https://github.com/rodasemi5/doggos",
     },
     
   ];
