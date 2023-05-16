@@ -3,10 +3,12 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, resume } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects, myGithub } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+
+
 
 const ProjectCard = ({
   index,
@@ -68,6 +70,8 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -100,7 +104,7 @@ const Works = () => {
           className="green-pink-gradient p-[10px] rounded-full flex justify-center items-center cursor-pointer mt-4"
           onClick={() => window.open(myGithub, "_blank")}
         >
-          <div class="bg-tertiary rounded-full px-3 py-2 flex justify-evenly items-center">
+          <div className="bg-tertiary rounded-full px-3 py-2 flex justify-evenly items-center">
           <img
                 src={github}
                 alt="source code"
@@ -108,6 +112,17 @@ const Works = () => {
               />
           </div>
           <p className="text-[21px] ml-2">GitHub</p>
+        </div>
+        <div className=" w-full flex flex-col items-center justify-center">
+        <p className="mt-24 text-secondary text-[21px] max-w-3xl leading-[30px] text-center">
+            Download my Resume!
+          </p>
+          <a href={resume} download>
+              <button className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary text-[21px] mt-10">
+                Download Resume
+              </button>
+              </a>
+
         </div>
       </div>
     </>

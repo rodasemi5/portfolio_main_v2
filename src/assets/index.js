@@ -38,6 +38,9 @@ import doggos from "./doggos.png"
 import jikan from "./jikan.png"
 import jobsearch from './jobsearch.png'
 
+import resume from './resume2023.pdf'
+
+
 export {
   logo,
   backend,
@@ -75,4 +78,5 @@ export {
   doggos,
   jikan,
   jobsearch,
+  resume,
 };
