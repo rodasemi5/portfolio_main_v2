@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { github, resume } from "../assets";
+import {myGithub } from "../constants";
 
 const Hero = () => {
   return (
@@ -22,12 +24,48 @@ const Hero = () => {
             I develop web applications, user <br className='sm:block hidden' />
             interfaces and databases
           </p>
+
+          <div className="w-full flex flex-col items-center justify-center ">
+      <p className="mt-24 text-secondary text-[21px] max-w-3xl leading-[30px] text-center">
+            Check out my Github!
+          </p>
+        <div
+          className="green-pink-gradient p-[10px] rounded-full flex justify-center items-center cursor-pointer mt-4"
+          onClick={() => window.open(myGithub, "_blank")}
+        >
+          <div className="bg-tertiary rounded-full px-3 py-2 flex justify-evenly items-center">
+          <img
+                src={github}
+                alt="source code"
+                className="w-[40px] h-[40px] object-contain"
+              />
+          </div>
+          <p className="text-[21px] ml-2">GitHub</p>
+        </div>
+        <div className=" w-full flex flex-col items-center justify-center">
+        <p className="mt-24 text-secondary text-[21px] max-w-3xl leading-[30px] text-center">
+            Download my Resume!
+          </p>
+          <a href={resume} download>
+              <button className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary text-[21px] mt-10">
+                Download Resume
+              </button>
+              </a>
+
+        </div>
+      </div>
         </div>
       </div>
 
-      <ComputersCanvas />
+      
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+
+
+
+
+{/* <ComputersCanvas /> */}
+
+      {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
@@ -43,7 +81,7 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

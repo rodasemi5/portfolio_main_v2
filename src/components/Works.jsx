@@ -96,7 +96,7 @@ const Works = () => {
         ))}
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center">
+      {/* <div className="w-full flex flex-col items-center justify-center">
       <p className="mt-24 text-secondary text-[21px] max-w-3xl leading-[30px] text-center">
             Check out my Github!
           </p>
@@ -124,7 +124,7 @@ const Works = () => {
               </a>
 
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
